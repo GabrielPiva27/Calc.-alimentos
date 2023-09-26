@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Nutrição</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+    <h1>🍟 Calculadora de Valor Nutricional 🍎</h1>
+
+    <form>
+        <label for="alimento">Nome do Alimento:</label>
+        <input type="text" id="alimento" placeholder="Exemplo: Maçã" required>
+        <br>
+
+        <label for="proteina">Proteína (g):</label>
+        <input type="number" id="proteina" min="0.1" placeholder="Proteína" required>
+        <br>
+
+        <label for="carboidratos">Carboidratos (g):</label>
+        <input type="number" id="carboidratos" min="0.1" placeholder="Carboidratos" required>
+        <br>
+
+        <label for="gordura">Gordura (g):</label>
+        <input type="number" id="gordura" min="0.1" placeholder="Gordura" required>
+        <br>
+
+        <button onclick="calcularNutricao(event)">
+            <i class="bi bi-calculator"></i>Calcular</button>
+
+        <div class="result">
+            <h2>Resultado:</h2>
+            <p id="resultado"></p>
+        </div>
+
+    </form>
+    <script src="js/alimentos.js"></script>
+</body>
+</html>
